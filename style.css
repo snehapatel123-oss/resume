@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Labrada', serif;
+    font-family: 'Taviraj', serif;
 }
 body{
     background: lightblue;
@@ -122,7 +124,7 @@ body{
 .container .right-side{
     position: relative;
     background: #fff ;
-    padding: 40px;
+    padding: 10px 40px;
 }
 .text ul{
     margin-top: 10px;
@@ -145,18 +147,20 @@ body{
     margin-bottom: 0;
 }
 .title2{
-    color: #0e1747;
+    color: #17242b;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px ;
 }
 
 p{
-    color: #333;
+    color: #003147;
 }
 .title2{
-    margin-top: 30px;
+    margin-top: 20px;
+    font-size: 18px;
 }
+
 .about .box{
      display: flex;
      flex-direction: row;
@@ -184,50 +188,73 @@ p{
 }
 
 .about li{
-    margin-bottom: 5px ;
-    list-style: none;
+    margin-bottom: 7px ;
+    list-style: circle;
 }
 
 .about li h3{
     font-size: 17px;
     font-weight: 550;
     color: #003147;
-    padding-bottom: 4px;
-    padding-top: 4px;
+    /* padding-bottom: 4px;
+    padding-top: 4px; */
     
     
 }
 .about li h3 a{
     font-size: 17px;
     font-weight: 750;
-    color: #000102;
+    color: rgb(4, 83, 114);
     padding: 5px;
+    text-decoration: none;
 }
 
 .about li h3 a:hover{
-    color:  #307a9c;
-    text-decoration: none;
+    
+   color: red;
     
 }
 .about li h3 b{
     font-size: 900;
-    color: rgb(5, 5, 5);
+    color:#17242b;
+}
+.about li h4 b{
+    font-size: 900;
+    color:rgb(4, 83, 114);
+}
+#newton{
+    list-style: disc;
 }
 
 
-@media (max-width:1000px) {
+@media (max-width:950px) {
     .container{
         margin: 10px;
         grid-template-columns: repeat(1,1fr);
     }
     .container .left-side {
         text-align: center;
+       
         
     }
     .container .left-side li{
         list-style: none;
     }
+    .title2{
+        align-items: center;
+    }
+    .h2{
+        text-align: center;
+    }
     
+}
+@media (max-width:1080px) {
+    
+    .container .left-side {
+       padding:18px;
+      
+    }
+   
 }
 
 @media (max-width: 600px) {
@@ -243,6 +270,12 @@ p{
     }
     .container .left-side li{
         list-style: none;
+    }
+    .title2{
+        align-items: center;
+    }
+    .h2{
+        text-align: center;
     }
     
 }
